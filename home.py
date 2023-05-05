@@ -22,7 +22,7 @@ st.sidebar.markdown(
 
 
 st.title(
-    "Modelado los temas de las mañaneras utilizando alocación de Dirichlet latente."
+    "Modelando los temas de las mañaneras utilizando alocación de Dirichlet latente."
 )
 st.image("resources/images/banner.jpeg")
 st.markdown("---")
