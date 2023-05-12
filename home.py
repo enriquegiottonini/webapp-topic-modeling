@@ -22,7 +22,7 @@ st.sidebar.markdown(
 
 
 st.title(
-    "Modelando los temas de las mañaneras utilizando alocación de Dirichlet latente."
+    "Modelando los temas de las mañaneras utilizando Alocación Latente de Dirichlet."
 )
 st.image("resources/images/banner.jpeg")
 st.markdown("---")
@@ -83,7 +83,7 @@ st.vega_lite_chart(
             "y": {
                 "field": "distribution",
                 "type": "quantitative",
-                "title": "Distribución",
+                "title": "Relevancia",
             },
             "color": {
                 "condition": {
@@ -179,7 +179,7 @@ pie_spec = {
 
 raw_df = pd.read_csv("resources/data/raw_data.csv")
 semana = st.slider(
-    "Selecciona el intervalo de tiempo que quieres visualizar",
+    "Selecciona la semana que quieres visualizar",
     min_value=init,
     max_value=end,
     value=init,
